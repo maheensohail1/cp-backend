@@ -3,7 +3,7 @@ name: Build and Deploy Backend
 on:
   push:
     branches:
-      - main  # Change this to your branch name if needed
+      - master  # Change this to your branch name if needed
 
 jobs:
   build:
