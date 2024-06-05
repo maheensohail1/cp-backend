@@ -21,6 +21,5 @@ router.post('/', async (req, res) => {
     return res.json({ course }).status(201)
 })
 
-//comment
 
 export default router;

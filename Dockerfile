@@ -17,7 +17,7 @@ COPY . .
 RUN npx prisma generate
 
 # Run database migrations
-RUN npx prisma migrate dev
+RUN npx prisma migrate deploy
 
 # Expose the application port
 EXPOSE 5000
