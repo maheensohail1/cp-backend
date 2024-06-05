@@ -30,6 +30,9 @@ jobs:
       - name: Build Docker image
         run: sudo docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest .
 
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}" | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+
       - name: Push Docker image to Docker Hub
         run: sudo docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest
 
