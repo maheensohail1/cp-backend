@@ -10,8 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://admin1:password1@terraform-20240605095246156500000006.ct4ook24yzdz.us-east-1.rds.amazonaws.com:5432"
-
+  url      = env("DATABASE_URL")
 }
 
 
