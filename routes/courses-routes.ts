@@ -14,7 +14,8 @@ router.post('/', async (req, res) => {
     const course = await prisma.course.create({
         data: {
             title: body.title,
-            description: body.description
+            description: body.description,
+            rating: body.rating
         }
     })
     return res.json({ course }).status(201)

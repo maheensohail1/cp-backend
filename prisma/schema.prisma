@@ -18,5 +18,6 @@ model Course {
   id        String     @id @default(uuid())
   title     String
   description   String?
+  rating    String    
   createdAt DateTime @default(now())
 }
