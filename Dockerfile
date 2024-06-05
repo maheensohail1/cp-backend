@@ -1,4 +1,6 @@
 # Use the official Node.js image as a base image
+RUN whoami
+
 FROM node:18
 
 # Set the working directory inside the container
@@ -18,7 +20,7 @@ RUN npx prisma generate
 
 # Run database migrations
 #RUN npx prisma migrate deploy
-RUN npx prisma migrate dev --schema=./prisma/schema.prisma
+RUN npx prisma migrate deploy
 
 # Expose the application port
 EXPOSE 5000
