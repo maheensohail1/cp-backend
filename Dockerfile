@@ -1,6 +1,4 @@
 # Use the official Node.js image as a base image
-RUN whoami
-
 FROM node:18
 
 # Set the working directory inside the container

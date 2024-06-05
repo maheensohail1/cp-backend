@@ -28,10 +28,10 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest .
+        run: sudo docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest
+        run: sudo docker push ${{ secrets.DOCKER_HUB_USERNAME }}/backend:latest
 
       - name: Deploy to EC2
         env:
