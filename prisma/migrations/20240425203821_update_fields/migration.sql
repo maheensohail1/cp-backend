@@ -9,4 +9,3 @@
 ALTER TABLE "Course" DROP COLUMN "content",
 DROP COLUMN "published",
 ADD COLUMN     "description" TEXT;
-ADD COLUMN     "rating" TEXT;
