@@ -3,7 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import coursesRouter from './routes/courses-routes';
 
-//comment added check CI/CD
+//cmment added check CI/CD
 const PORT = 5000;
 const app = express();
 
