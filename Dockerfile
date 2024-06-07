@@ -14,6 +14,7 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 
+#ffss
 RUN npx prisma migrate dev
 # Generate Prisma client
 RUN npx prisma generate
