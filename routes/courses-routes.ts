@@ -1,6 +1,7 @@
 import express from 'express'
 import { prisma } from '../prisma/db';
 const router = express.Router();
+//added comment
 
 router.get('/', async (req, res) => {
     const courses = await prisma.course.findMany();
